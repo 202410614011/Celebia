@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Celebia | Kesfet</title>
-	<link rel="icon" type="image/jpeg" href="Celebia.jpeg" />
+		<link rel="icon" type="image/jpeg" href="Celebia.jpeg" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -38,7 +38,7 @@
 				radial-gradient(circle at 95% 0%, #dff8f5 0%, transparent 28%),
 				linear-gradient(180deg, var(--bg-soft), var(--bg));
 			min-height: 100vh;
-			padding: 18px 24px 24px;
+			padding: 24px;
 		}
 
 		.page {
@@ -117,8 +117,8 @@
 		}
 
 		.logo {
-			width: 58px;
-			height: 58px;
+			width: 70px;
+			height: 70px;
 			border-radius: 14px;
 			object-fit: cover;
 			border: 2px solid #ffe3cc;
@@ -277,12 +277,6 @@
 			border: 1px solid #d2efec;
 			border-radius: 999px;
 			padding: 5px 10px;
-		}
-
-		.desc {
-			color: #5a6b6b;
-			font-size: 0.91rem;
-			line-height: 1.5;
 		}
 
 		.empty {
@@ -470,7 +464,7 @@
 				</p>
 				<div class="chip-row">
 					<span class="chip">Plaj</span>
-					<span class="chip">Kamp(Doga)</span>
+					<span class="chip">Parklar</span>
 					<span class="chip">Kulturel(Tarihi)</span>
 					<span class="chip">Eglence Mekanlari</span>
 				</div>
@@ -486,7 +480,7 @@
 				<select id="categorySelect">
 					<option value="">Tum Kategoriler</option>
 					<option value="Plaj">Plaj</option>
-					<option value="Kamp(Doğa)">Kamp(Doga)</option>
+					<option value="Parklar">Parklar</option>
 					<option value="Kültürel(Tarihi)">Kulturel(Tarihi)</option>
 					<option value="Eğlence Mekanları">Eglence Mekanlari</option>
 				</select>
@@ -516,7 +510,6 @@
 				<div class="info-grid">
 					<div class="info"><b>Il</b><span id="modalCity"></span></div>
 					<div class="info"><b>Kategori</b><span id="modalCategory"></span></div>
-					<div class="info"><b>Puan</b><span id="modalScore"></span></div>
 					<div class="info"><b>En Iyi Zaman</b><span id="modalSeason"></span></div>
 				</div>
 				<div class="info"><b>Adres</b><span id="modalAddress"></span></div>
@@ -541,7 +534,6 @@
 		const modalTitle = document.getElementById("modalTitle");
 		const modalCity = document.getElementById("modalCity");
 		const modalCategory = document.getElementById("modalCategory");
-		const modalScore = document.getElementById("modalScore");
 		const modalSeason = document.getElementById("modalSeason");
 		const modalAddress = document.getElementById("modalAddress");
 		const modalDescription = document.getElementById("modalDescription");
@@ -566,7 +558,6 @@
 						<span>${place.il}</span>
 						<span>${place.kategori}</span>
 					</div>
-					<p class="desc">${place.ozet}</p>
 				</div>
 			`;
 			card.addEventListener("click", () => openModal(place));
@@ -616,7 +607,6 @@
 			modalTitle.textContent = place.ad;
 			modalCity.textContent = place.il;
 			modalCategory.textContent = place.kategori;
-			modalScore.textContent = `${place.puan} / 5`;
 			modalSeason.textContent = place.enIyiZaman;
 			modalAddress.textContent = place.adres;
 			modalDescription.textContent = place.aciklama;
