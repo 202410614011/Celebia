@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Celebia | Kesfet</title>
-		<link rel="icon" type="image/jpeg" href="Celebia.jpeg" />
+	<link rel="icon" type="image/jpeg" href="Celebia.jpeg" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -85,11 +85,32 @@
 			text-overflow: ellipsis;
 		}
 
-		.site-note {
-			color: var(--muted);
-			font-size: 0.88rem;
-			font-weight: 600;
-			text-align: right;
+		.lang-selector {
+			display: flex;
+			gap: 8px;
+			align-items: center;
+		}
+
+		.lang-selector label {
+			font-size: 0.9rem;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		.lang-selector select {
+			width: auto;
+			padding: 8px 12px;
+			font-size: 0.9rem;
+			background: #fffdf8;
+			color: #223233;
+			border: 1px solid #d7cdbf;
+			cursor: pointer;
+			outline: none;
+			transition: border 0.2s ease;
+		}
+
+		.lang-selector select:focus {
+			border-color: #ffa86f;
 		}
 
 		.hero {
@@ -452,31 +473,45 @@
 </head>
 <body>
 	<main class="page">
+		<section class="site-bar">
+			<div class="site-brand">
+				<img class="site-logo" src="Celebia.jpeg" alt="Celebia" />
+				<span class="site-name">Celebia</span>
+			</div>
+			<div class="lang-selector">
+				<label for="langSelect">Dil:</label>
+				<select id="langSelect">
+					<option value="tr">Türkçe</option>
+					<option value="en">English</option>
+				</select>
+			</div>
+		</section>
+
 		<section class="hero">
 			<article class="brand-card">
 				<div class="brand-row">
 					<img class="logo" src="Celebia.jpeg" alt="Celebia logosu" />
-					<h1>Celebia ile Sehrini Kesfet</h1>
+					<h1 id="mainTitle">Celebia ile Sehrini Kesfet</h1>
 				</div>
-				<p class="subtitle">
+				<p class="subtitle" id="mainSubtitle">
 					Il ve kategori sec, sana en uygun mekanlari tek ekranda gor.
 					Fotograflari incele, kartlara tiklayip ayrintili bilgilere ulas.
 				</p>
 				<div class="chip-row">
-					<span class="chip">Plaj</span>
-					<span class="chip">Parklar</span>
-					<span class="chip">Kulturel(Tarihi)</span>
-					<span class="chip">Eglence Mekanlari</span>
+					<span class="chip" data-label="beach">Plaj</span>
+					<span class="chip" data-label="parks">Parklar</span>
+					<span class="chip" data-label="cultural">Kulturel(Tarihi)</span>
+					<span class="chip" data-label="entertainment">Eglence Mekanlari</span>
 				</div>
 			</article>
 
 			<section class="filters">
-				<label for="citySelect">Il Sec</label>
+				<label for="citySelect" id="cityLabel">Il Sec</label>
 				<select id="citySelect">
 					<option value="">Tum Iller</option>
 				</select>
 
-				<label for="categorySelect">Kategori Sec</label>
+				<label for="categorySelect" id="categoryLabel">Kategori Sec</label>
 				<select id="categorySelect">
 					<option value="">Tum Kategoriler</option>
 					<option value="Plaj">Plaj</option>
@@ -492,7 +527,7 @@
 
 		<section>
 			<div class="grid-head">
-				<h2>Onerilen Mekanlar</h2>
+				<h2 id="suggestedTitle">Onerilen Mekanlar</h2>
 				<span class="count" id="countText">0 sonuc</span>
 			</div>
 			<div class="cards" id="cards"></div>
@@ -508,11 +543,11 @@
 					<button id="closeModal" class="close" type="button" aria-label="Kapat">&times;</button>
 				</div>
 				<div class="info-grid">
-					<div class="info"><b>Il</b><span id="modalCity"></span></div>
-					<div class="info"><b>Kategori</b><span id="modalCategory"></span></div>
-					<div class="info"><b>En Iyi Zaman</b><span id="modalSeason"></span></div>
+					<div class="info"><b id="labelCity">Il</b><span id="modalCity"></span></div>
+					<div class="info"><b id="labelCategory">Kategori</b><span id="modalCategory"></span></div>
+					<div class="info"><b id="labelSeason">En Iyi Zaman</b><span id="modalSeason"></span></div>
 				</div>
-				<div class="info"><b>Adres</b><span id="modalAddress"></span></div>
+				<div class="info"><b id="labelAddress">Adres</b><span id="modalAddress"></span></div>
 				<p id="modalDescription" class="desc"></p>
 				<div class="tags" id="modalTags"></div>
 			</div>
@@ -520,12 +555,167 @@
 	</aside>
 
 	<script>
+		// Dil paketleri
+		const translations = {
+			tr: {
+				mainTitle: "Celebia ile Sehrini Kesfet",
+				mainSubtitle: "Il ve kategori sec, sana en uygun mekanlari tek ekranda gor. Fotograflari incele, kartlara tiklayip ayrintili bilgilere ulas.",
+				cityLabel: "Il Sec",
+				categoryLabel: "Kategori Sec",
+				allCities: "Tum Iller",
+				allCategories: "Tum Kategoriler",
+				filterBtn: "Mekanlari Goster",
+				suggestedTitle: "Onerilen Mekanlar",
+				categoryPlaj: "Plaj",
+				categoryParklar: "Parklar",
+				categoryCultural: "Kulturel(Tarihi)",
+				categoryEntertainment: "Eglence Mekanlari",
+				labelCity: "Il",
+				labelCategory: "Kategori",
+				labelSeason: "En Iyi Zaman",
+				labelAddress: "Adres",
+				beach: "Plaj",
+				parks: "Parklar",
+				cultural: "Kulturel(Tarihi)",
+				entertainment: "Eglence Mekanlari",
+				resultSingular: "1 sonuc",
+				resultPlural: "{count} sonuc",
+				noResult: "Secimlerine uygun mekan bulunamadi.",
+				loadError: "veri.json yuklenemedi. Dosyalari bir local server ile acmayi dene (ornek: Live Server).",
+				closeLabel: "Kapat"
+			},
+			en: {
+				mainTitle: "Explore Your City with Celebia",
+				mainSubtitle: "Select a province and category to find the best places just for you. Browse photos, click on cards to get detailed information.",
+				cityLabel: "Select Province",
+				categoryLabel: "Select Category",
+				allCities: "All Provinces",
+				allCategories: "All Categories",
+				filterBtn: "Show Places",
+				suggestedTitle: "Recommended Places",
+				categoryPlaj: "Beach",
+				categoryParklar: "Parks",
+				categoryCultural: "Cultural (Historical)",
+				categoryEntertainment: "Entertainment Venues",
+				labelCity: "Province",
+				labelCategory: "Category",
+				labelSeason: "Best Time",
+				labelAddress: "Address",
+				beach: "Beach",
+				parks: "Parks",
+				cultural: "Cultural (Historical)",
+				entertainment: "Entertainment Venues",
+				resultSingular: "1 result",
+				resultPlural: "{count} results",
+				noResult: "No places found matching your criteria.",
+				loadError: "Could not load veri.json. Try opening files with a local server (e.g., Live Server).",
+				closeLabel: "Close"
+			}
+		};
+
+		let currentLang = localStorage.getItem("celebiaLang") || "tr";
+		let allPlaces = [];
+
+		// Çeviriler
+		function t(key) {
+			return translations[currentLang]?.[key] || key;
+		}
+
+		// Kategori çevirisi
+		function translateCategory(cat) {
+			if (currentLang === "en") {
+				if (cat === "Plaj") return "Beach";
+				if (cat === "Parklar") return "Parks";
+				if (cat === "Kültürel(Tarihi)" || cat === "Kulturel(Tarihi)") return "Cultural (Historical)";
+				if (cat === "Eğlence Mekanları" || cat === "Eglence Mekanlari") return "Entertainment Venues";
+			}
+			return cat;
+		}
+
+		// Aktivite çevirisi
+		function translateActivity(activity) {
+			const activityMap = {
+				"Yuzme": "Swimming",
+				"Guneslenme": "Sunbathing",
+				"Sahil yuruyusu": "Beach Walk",
+				"Su sporlari": "Water Sports",
+				"Canli muzik": "Live Music",
+				"Gece hayatı": "Nightlife",
+				"Arkadas bulusmasi": "Meeting Friends",
+				"VR oyunları": "VR Games",
+				"Sanal gerçeklik deneyimi": "Virtual Reality Experience",
+				"Teknoloji etkinlikleri": "Technology Events",
+				"Eglence": "Entertainment",
+				"Piknik": "Picnic",
+				"Yürüyüş": "Hiking",
+				"Doğa ile iç içe zaman geçirme": "Nature Time",
+				"Hayvanat bahçesi": "Zoo",
+				"Tarihi eserler": "Historical Artifacts",
+				"Sanat eserleri": "Artworks",
+				"Yerel kültür": "Local Culture",
+				"Atatürk'ün yaşamı ve eserleri": "Atatürk's Life and Works",
+				"Kültürel etkinlikler": "Cultural Events",
+				"Arkeoloji": "Archaeology",
+				"Doğa tarihi": "Natural History",
+				"Biyoloji": "Biology",
+				"Jeoloji": "Geology",
+				"Eğitim tarihi": "History of Education",
+				"Demiryolu tarihi": "Railway History",
+				"Mask tarihi": "Mask History",
+				"Gece Klubu": "Night Club",
+				"DJ performansları": "DJ Performances",
+				"Dans": "Dancing",
+				"Plaj": "Beach",
+				"Deniz aktiviteleri": "Water Activities"
+			};
+			return activityMap[activity] || activity;
+		}
+
+		// Sayfayı dil ayarlarına göre güncelle
+		function updatePageLanguage() {
+			document.documentElement.lang = currentLang;
+			
+			document.getElementById("mainTitle").textContent = t("mainTitle");
+			document.getElementById("mainSubtitle").textContent = t("mainSubtitle");
+			document.getElementById("cityLabel").textContent = t("cityLabel");
+			document.getElementById("categoryLabel").textContent = t("categoryLabel");
+			document.getElementById("filterBtn").textContent = t("filterBtn");
+			document.getElementById("suggestedTitle").textContent = t("suggestedTitle");
+			document.getElementById("labelCity").textContent = t("labelCity");
+			document.getElementById("labelCategory").textContent = t("labelCategory");
+			document.getElementById("labelSeason").textContent = t("labelSeason");
+			document.getElementById("labelAddress").textContent = t("labelAddress");
+			document.getElementById("closeModal").setAttribute("aria-label", t("closeLabel"));
+
+			// Chip'leri güncelle
+			document.querySelectorAll(".chip").forEach(chip => {
+				const label = chip.getAttribute("data-label");
+				chip.textContent = t(label);
+			});
+
+			// Select seçeneklerini güncelle
+			document.querySelector("#citySelect option").textContent = t("allCities");
+			const categoryOptions = document.querySelectorAll("#categorySelect option");
+			categoryOptions[0].textContent = t("allCategories");
+			categoryOptions[1].textContent = t("categoryPlaj");
+			categoryOptions[2].textContent = t("categoryParklar");
+			categoryOptions[3].textContent = t("categoryCultural");
+			categoryOptions[4].textContent = t("categoryEntertainment");
+
+			// Şehir seçeneklerini yeniden doldur
+			fillCityOptions(allPlaces);
+			
+			// Kartları ve metaları yeniden render et
+			filterPlaces();
+		}
+
 		const citySelect = document.getElementById("citySelect");
 		const categorySelect = document.getElementById("categorySelect");
 		const filterBtn = document.getElementById("filterBtn");
 		const cardsContainer = document.getElementById("cards");
 		const countText = document.getElementById("countText");
 		const errorBox = document.getElementById("errorBox");
+		const langSelect = document.getElementById("langSelect");
 
 		const detailModal = document.getElementById("detailModal");
 		const closeModal = document.getElementById("closeModal");
@@ -539,10 +729,17 @@
 		const modalDescription = document.getElementById("modalDescription");
 		const modalTags = document.getElementById("modalTags");
 
-		let allPlaces = [];
+		// Dil değiştir
+		langSelect.value = currentLang;
+		langSelect.addEventListener("change", (e) => {
+			currentLang = e.target.value;
+			localStorage.setItem("celebiaLang", currentLang);
+			updatePageLanguage();
+		});
 
 		function updateCount(value) {
-			const text = value === 1 ? "1 sonuc" : `${value} sonuc`;
+			const template = value === 1 ? t("resultSingular") : t("resultPlural");
+			const text = template.replace("{count}", value);
 			countText.textContent = text;
 		}
 
@@ -550,13 +747,14 @@
 			const card = document.createElement("article");
 			card.className = "card";
 			card.style.animationDelay = `${Math.min(index * 0.06, 0.5)}s`;
+			const displayCategory = translateCategory(place.kategori);
 			card.innerHTML = `
 				<img src="${place.kapakFoto}" alt="${place.ad}" loading="lazy">
 				<div class="card-body">
 					<h3>${place.ad}</h3>
 					<div class="meta">
 						<span>${place.il}</span>
-						<span>${place.kategori}</span>
+						<span>${displayCategory}</span>
 					</div>
 				</div>
 			`;
@@ -569,7 +767,7 @@
 			updateCount(list.length);
 
 			if (!list.length) {
-				cardsContainer.innerHTML = '<div class="empty">Secimlerine uygun mekan bulunamadi.</div>';
+				cardsContainer.innerHTML = `<div class="empty">${t("noResult")}</div>`;
 				return;
 			}
 
@@ -591,7 +789,21 @@
 			renderPlaces(filtered);
 		}
 
+		function shufflePlaces(list) {
+			const shuffled = [...list];
+			for (let i = shuffled.length - 1; i > 0; i -= 1) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+			}
+			return shuffled;
+		}
+
 		function fillCityOptions(places) {
+			// Eski seçenekleri temizle (ilk seçenek hariç)
+			while (citySelect.options.length > 1) {
+				citySelect.remove(1);
+			}
+			
 			const cities = [...new Set(places.map((place) => place.il))].sort((a, b) => a.localeCompare(b, "tr"));
 			cities.forEach((city) => {
 				const opt = document.createElement("option");
@@ -602,12 +814,14 @@
 		}
 
 		function openModal(place) {
+			const displayCategory = translateCategory(place.kategori);
+			
 			modalImage.src = place.kapakFoto;
 			modalImage.alt = `${place.ad} gorseli`;
 			modalTitle.textContent = place.ad;
 			modalCity.textContent = place.il;
-			modalCategory.textContent = place.kategori;
-			modalSeason.textContent = place.enIyiZaman;
+			modalCategory.textContent = displayCategory;
+			modalSeason.textContent = place.enIyiZaman || "-";
 			modalAddress.textContent = place.adres;
 			modalDescription.textContent = place.aciklama;
 
@@ -615,7 +829,7 @@
 			(place.etkinlikler || []).forEach((item) => {
 				const span = document.createElement("span");
 				span.className = "tag";
-				span.textContent = item;
+				span.textContent = currentLang === "en" ? translateActivity(item) : item;
 				modalTags.appendChild(span);
 			});
 
@@ -634,11 +848,12 @@
 				if (!response.ok) {
 					throw new Error(`Veri alinamadi: ${response.status}`);
 				}
-				allPlaces = await response.json();
+				const loadedPlaces = await response.json();
+				allPlaces = shufflePlaces(loadedPlaces);
 				fillCityOptions(allPlaces);
 				renderPlaces(allPlaces);
 			} catch (error) {
-				errorBox.textContent = "veri.json yuklenemedi. Dosyalari bir local server ile acmayi dene (ornek: Live Server).";
+				errorBox.textContent = t("loadError");
 				renderPlaces([]);
 			}
 		}
@@ -659,6 +874,8 @@
 			}
 		});
 
+		// Başlangıç
+		updatePageLanguage();
 		loadData();
 	</script>
 </body>

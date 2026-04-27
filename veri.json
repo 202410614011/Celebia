@@ -5,7 +5,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-1.png",
-    "aciklama": "Çeşme'nin efsanevi Ilica Sahili, ılık mineral sularıyla ünlüdür. Terapötik özellikleri bulunan doğal sıcak su kaynakları, ruh ve bedenin yenilenmesi için ideal bir ortam yaratır. Ailelerin tercih ettiği bu sahilde, deniz banyosu yapmanın yanında kumsal üzerinde dinlenme ve geleneksel Çeşme kahvesinde oturmak unutulmaz deneyimler sunar.",
+    "aciklama": "Ilıca Sahili, sığ ve ılık denizi sayesinde özellikle çocuklu aileler için güvenli bir yüzme alanı sunar. Çeşme merkezine yakın konumu, sahil yürüyüşü yapmak ve gün batımını izlemek isteyenler için de avantaj sağlar. İnce kumu ve düzenli çevresiyle sakin bir plaj günü arayanlara hitap eder.",
     "adres": "Ilica Mahallesi, Cesme, Izmir",
     "enIyiZaman": "Haziran - Eylul",
     "etkinlikler": ["Yuzme", "Guneslenme", "Sahil yuruyusu", "Su sporlari"]
@@ -236,7 +236,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-22.png",
-    "aciklama": "Urla'nın kalbinde yer alan Kum Denizi Plajı, doğal güzelliği ve uzun altın rengi kumsuralıyla bilinir. Dalış, sörf ve su sporları tutkunlarının başvurduğu bu plajda, deniz kenarında yer alan balık restoranlarında taze deniz ürünleri tadına bakabilirsiniz. Kamp ve caravan imkanları ile bütün hafta sonu tatili için mükemmel bir destinasyondur.",
+    "aciklama": "Kum Denizi Plajı, Urla'nın rüzgâra açık kıyı hattında yer aldığı için su sporlarına meraklı ziyaretçilerin ilgisini çeker. Gün boyunca yüzme molası verip akşamüstü sahil çevresindeki restoranlarda vakit geçirmek mümkündür. Doğal kıyı görünümü ve geniş kumsalı, uzun süreli deniz keyfi isteyenlere uygundur.",
     "adres": "Urla, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -247,7 +247,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-23.png",
-    "aciklama": "Güzelbahçe'nin romantik Liman Plajı, Izmir şehrine yakınlığı nedeniyle gün boyu aktiviteyle dolu bir mekandır. Yatlar ve yelkenliler arasında deniz yürüyüşü yapma veya yakındaki butiklerde alışveriş yapma fırsatı sunar. Gün batımı sırasında liman kenarında yürüyüş yapmak, İzmir'in en göz kamaştırıcı manzaralarından birini sunmaktadır.",
+    "aciklama": "Liman Plajı, Güzelbahçe kıyısında daha şehirli ve hareketli bir sahil deneyimi arayanlara hitap eder. Yat limanına yakınlığı sayesinde manzara izlemek, fotoğraf çekmek ve akşamüstü serinliğinde yürüyüş yapmak için iyi bir duraktır. Sessiz dalga sesiyle sahil kafelerinde kısa bir mola vermek de burada keyiflidir.",
     "adres": "Güzelbahçe, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -258,7 +258,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-24.png",
-    "aciklama": "Çeşmealtı Mavi Plajı, Ege Denizi'nin şeffaf sularına ve İzmir'in en iyi gün batımlarına sahne olmaktadır. Aileler için güvenli, sucu tercih edenler için heyecan verici, bu plaj her yaştan ziyaretçiye unutulmaz anılar sunmaktadır. Plajda yer alan café ve restoranlar, açık hava spor alanları, deniz sporları olanakları ve temiz ortamıyla İzmir'in en seçkin plajlarından biridir.",
+    "aciklama": "Çeşmealtı Mavi Plaj, berrak suyu ve sakin kıyı yapısıyla kısa kaçamaklar için ideal bir sahildir. Sabah saatlerinde daha dingin, öğleden sonra ise daha canlı bir atmosfere bürünür. Deniz kenarında vakit geçirirken çevredeki küçük işletmeler sayesinde temel ihtiyaçlara kolayca ulaşılabilir.",
     "adres": "Urla, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -269,7 +269,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-25.png",
-    "aciklama": "Çukuraltı Halk Plajı, ekonomik fiyatlarıyla ailelerin en çok tercih ettiği İzmir plajlarından biridir. Halkın plajı olarak bilinmesi, farklı sosyoekonomik seviyedeki insanların bir arada vakit geçirmesini sağlar. Gözleme, balık ekmek gibi uygun fiyatlı yemek seçenekleri ve dalgıç okullarının bulunması, eğlencelik ve ruh açıcı bir ortam sunmaktadır.",
+    "aciklama": "Çukuraltı Halk Plajı, daha ulaşılabilir ve gündelik bir deniz deneyimi isteyenler için öne çıkar. Sahil boyunca uygun fiyatlı yiyecek seçenekleri ve gün içinde uzunca vakit geçirilebilecek oturma alanları bulunur. Mahalle havasını koruyan yapısı, burayı yerel ziyaretçiler için samimi bir durak haline getirir.",
     "adres": "Menderes, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -280,7 +280,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-26.png",
-    "aciklama": "Sazlıca Plajı, İzmir'in en güzel plajlarından biridir. Temiz kumsalı ve doğal güzelliğiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Sazlıca Plajı, Foça'nın daha doğal kalan kıyı noktalarından biridir ve kalabalıktan uzak bir deniz günü sunar. Taşlık alanlarla iç içe geçen kıyı yapısı, fotoğraf çekmeyi sevenler için de ilgi çekicidir. Sessiz ve sade atmosferiyle rahatlamak isteyenler için uygun bir seçenektir.",
     "adres": "Foça, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -291,7 +291,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-27.png",
-    "aciklama": "Kumsal Incir Alti Sahili, İzmir'in doğal güzellikleriyle ünlüdür. Temiz kumsalı ve sakin atmosferiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Kumsal İnciraltı Sahili, şehir içinde denize yakın kısa bir mola vermek isteyenler için uygundur. Sahil bandı boyunca yürüyüş yapabilir, bisiklet sürebilir ve deniz manzarası eşliğinde dinlenebilirsiniz. Özellikle akşamüstü saatlerinde daha keyifli bir atmosfer oluşur.",
     "adres": "Narlıdere, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -302,7 +302,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-28.png",
-    "aciklama": "Ağapark Plajı, İzmir'in en güzel plajlarından biridir. Temiz kumsalı ve doğal güzelliğiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Ağapark Plajı, Aliağa tarafında günübirlik deniz planı yapanlar için pratik bir noktadır. Düzenli kıyı alanı ve çevresindeki sosyal imkanlar, ailelerin ve arkadaş gruplarının rahatça vakit geçirmesine yardımcı olur. Rüzgâr alan yapısı sayesinde özellikle sıcak günlerde ferah bir seçenek sunar.",
     "adres": "Aliağa, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -313,7 +313,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-29.png",
-    "aciklama": "Urla Belediye Halk Plajı, Urla'nın en popüler plajlarından biridir. Uygun fiyatlı hizmetleri ve sakin atmosferiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Urla Belediye Halk Plajı, halkın erişimine açık, düzenli ve sade bir deniz alanı arayanlar için uygundur. Aileler için temel konforu sağlayan yapısı ve sakinliği sayesinde kısa ama verimli bir plaj günü sunar. Urla merkezine yakın olması ulaşımı da kolaylaştırır.",
     "adres": "Urla, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -324,7 +324,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-30.png",
-    "aciklama": "Boyalık Plajı, İzmir'in en güzel plajlarından biridir. Temiz kumsalı ve doğal güzelliğiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Boyalık Plajı, Çeşme'nin daha popüler ve hareketli kıyılarından biridir. Deniz suyu genellikle canlı ve berrak görünür; bu da yüzme ve serinleme için cazip bir ortam oluşturur. Yakın çevredeki tesisler sayesinde gün boyu rahat bir plaj deneyimi yaşanabilir.",
     "adres": "Çeşme, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -335,7 +335,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-31.png",
-    "aciklama": "İncirlikoy, İzmir'in en güzel plajlarından biridir. Temiz kumsalı ve doğal güzelliğiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "İncirliköy, Karaburun'un sakin doğasını denizle birleştiren küçük ve huzurlu bir koydur. Kalabalıktan uzak kalmak isteyenler için sessiz bir yüzme alanı sunar. Kayalık çevre dokusu ve berrak suyu, burayı daha doğal bir deneyim arayanlar için öne çıkarır.",
     "adres": "Karaburun, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -346,7 +346,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-32.png",
-    "aciklama": "Pırlanta Plajı, İzmir'in en güzel plajlarından biridir. Temiz kumsalı ve doğal güzelliğiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Pırlanta Plajı, Çeşme'nin popüler rüzgâr alan noktalarından biri olarak özellikle gün içinde hareketli bir deniz ortamı sunar. Geniş kıyı şeridi ve açık ufuk manzarası, uzun yürüyüşler ve su sporları için dikkat çeker. Yaz aylarında canlı ama ferah bir plaj günü isteyenlere uygundur.",
     "adres": "Çeşme, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -357,7 +357,7 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-33.png",
-    "aciklama": "Bostanlı Sahili, İzmir'in doğal güzellikleriyle ünlüdür. Temiz kumsalı ve sakin atmosferiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Bostanlı Sahili, kumsaldan çok sahil yaşamı ve uzun yürüyüş hattıyla öne çıkar. Bisiklet yolu, koşu alanı ve oturma bölümleri sayesinde günün her saatinde hareketlidir. Deniz manzarası eşliğinde sosyal bir sahil deneyimi arayanlar için uygundur.",
     "adres": "Karşıyaka, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
@@ -368,9 +368,119 @@
     "il": "Izmir",
     "kategori": "Plaj",
     "kapakFoto": "fotolar/izm-34.png",
-    "aciklama": "İzmir'in doğal güzellikleriyle ünlüdür. Temiz kumsalı ve sakin atmosferiyle ziyaretçilere keyifli bir deneyim sunar.",
+    "aciklama": "Gülbahçe Sahili, Urla'nın daha yerel ve sessiz kıyı noktalarından biridir. Denize karşı sakin bir yürüyüş yapmak, kalabalıktan uzak oturmak ve sade bir manzara izlemek isteyenler için uygundur. Doğal görünümü nedeniyle hafta sonu kaçamaklarında tercih edilebilir.",
     "adres": "Urla, Izmir",
     "enIyiZaman": "Gün boyu",
     "etkinlikler": ["Plaj", "Deniz aktiviteleri"]
+    },
+    {
+    "id": "den-1",
+    "ad": "Denizli Kent Müzesi",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-1.png",
+    "aciklama": "Denizli Kent Müzesi, kentin sosyal yaşamını, geleneksel el sanatlarını ve yerel tarihini bir arada sunan önemli bir kültür noktasıdır. Sergi salonlarında Denizli'nin geçmişten bugüne dönüşümünü anlatan belgeler, objeler ve görsel materyaller yer alır. Şehri yakından tanımak isteyen ziyaretçiler için iyi bir başlangıç rotasıdır.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Gün boyu",
+    "etkinlikler": ["Kent tarihi", "Müze gezisi", "Kültürel keşif"]
+    },
+    {
+    "id": "den-2",
+    "ad": "Denizli Atatürk Etnografya Müzesi",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-2.png",
+    "aciklama": "Denizli Atatürk Etnografya Müzesi, Atatürk dönemi hatıraları ile Anadolu'nun geleneksel yaşam kültürünü aynı çatı altında sunar. Müze içinde döneme ait eşyalar, kıyafetler ve günlük kullanım araçları sergilenir. Tarih ve etnografya meraklıları için zengin içerikli bir ziyaret deneyimi sağlar.",
+    "adres": "Bayramyeri, Denizli",
+    "enIyiZaman": "Gün boyu",
+    "etkinlikler": ["Etnografya", "Atatürk tarihi", "Müze gezisi"]
+    },
+    {
+    "id": "den-3",
+    "ad": "Hierapolis Arkeoloji Müzesi",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-3.png",
+    "aciklama": "Hierapolis Arkeoloji Müzesi, antik kent kazılarından çıkan heykelleri, lahitleri ve gündelik yaşam kalıntılarını bir araya getirir. Sergilenen eserler bölgenin Roma ve Helenistik dönem tarihini daha anlaşılır hale getirir. Pamukkale gezisini tarihsel derinlikle tamamlamak isteyenler için ideal bir duraktır.",
+    "adres": "Merkez/Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Arkeoloji", "Müze gezisi", "Tarihi eserler"]
+    },
+    {
+    "id": "den-4",
+    "ad": "Denizli Hierapolis Ören yeri",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-4.png",
+    "aciklama": "Hierapolis Ören Yeri, antik yolları, sütunlu caddeleri ve anıtsal yapılarıyla Denizli'nin en etkileyici açık hava tarih alanlarından biridir. Geniş bir alana yayılan kalıntılar, ziyaretçilere antik bir kentin planını yerinde görme fırsatı sunar. Fotoğraf çekimi ve tarih odaklı keşif yürüyüşleri için oldukça uygundur.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Ören yeri gezisi", "Tarihi keşif", "Fotoğrafçılık"]
+    },
+    {
+    "id": "den-5",
+    "ad": "Afrodisias Antik Kenti Örenyeri",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-5.png",
+    "aciklama": "Afrodisias Antik Kenti Örenyeri, mermer işçiliğiyle ün kazanmış yapıları ve iyi korunmuş anıtlarıyla dikkat çeker. Antik dönemin sanat ve kent yaşamına dair çok sayıda iz bu alanda görülebilir. Tarih, arkeoloji ve açık hava gezisini birleştirmek isteyen ziyaretçiler için güçlü bir rotadır.",
+    "adres": "Karacasu, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Antik kent gezisi", "Arkeoloji", "Kültürel keşif"]
+    },
+    {
+    "id": "den-6",
+    "ad": "Hierapolis Antik Tiyatrosu",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-6.png",
+    "aciklama": "Hierapolis Antik Tiyatrosu, sahne binası kabartmaları ve oturma sıralarının düzeniyle antik dönem mimarisini etkileyici biçimde yansıtır. Yüksek konumu sayesinde çevre manzarasını geniş açıyla izleme imkanı verir. Kısa bir gezi içinde hem tarih hem manzara deneyimi sunan özel bir noktadır.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Antik tiyatro", "Tarihi yapı inceleme", "Manzara izleme"]
+    },
+    {
+    "id": "den-7",
+    "ad": "Laodikeia Antik Kenti",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-7.png",
+    "aciklama": "Laodikeia Antik Kenti, geniş kazı alanı ve ayağa kaldırılan yapılarıyla bölgenin en kapsamlı arkeolojik sahalarından biridir. Stadyum, kilise kalıntıları ve sütunlu alanlar antik kentin zengin geçmişini gözler önüne serer. Uzun süreli ve detaylı bir kültür gezisi yapmak isteyenler için çok uygun bir duraktır.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Antik kent gezisi", "Arkeolojik keşif", "Tarihi rota"]
+    },
+    {
+    "id": "den-8",
+    "ad": "Hierapolis Antik Kenti",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-8.png",
+    "aciklama": "Hierapolis Antik Kenti, termal kaynakların çevresinde gelişmiş tarihi dokusuyla Denizli'nin simge kültür noktalarından biridir. Nekropol alanı, anıtsal kapılar ve eski kent planı ziyaretçilere katmanlı bir tarih deneyimi sunar. Pamukkale rotasında mutlaka değerlendirilmesi gereken bir miras alanıdır.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Antik kent", "Kültürel gezi", "Tarihi keşif"]
+    },
+    {
+    "id": "den-9",
+    "ad": "Pamukkale Travertenleri",
+    "il": "Denizli",
+    "kategori": "Kültürel(Tarihi)",
+    "kapakFoto": "fotolar/den-9.png",
+    "aciklama": "Pamukkale Travertenleri, beyaz terasları ve termal su birikintileriyle dünya çapında bilinen eşsiz bir doğal miras alanıdır. Gün ışığına göre değişen renk tonları, ziyaretçilere farklı saatlerde farklı görsel deneyimler sunar. Doğa ile tarihi aynı rotada yaşamak isteyenler için Denizli'nin en ikonik noktasıdır.",
+    "adres": "Pamukkale, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Traverten gezisi", "Doğal miras", "Fotoğrafçılık"]
+    },
+    {
+    "id": "den-10",
+    "ad": "Saklı Göl Denizli",
+    "il": "Denizli",
+    "kategori": "Parklar",
+    "kapakFoto": "fotolar/den-10.png",
+    "aciklama": "Saklı Göl, Denizli'nin en güzel doğal güzelliklerinden biridir. Göl çevresindeki yürüyüş yolları, doğal yaşam alanları ve sakin atmosferiyle ziyaretçilere huzurlu bir deneyim sunar. Doğa fotoğrafçılığı, yürüyüş ve rahatlatıcı geziler için ideal bir noktadır.",
+    "adres": "Honaz, Denizli",
+    "enIyiZaman": "Ilkbahar - Sonbahar",
+    "etkinlikler": ["Yürüyüş", "Doğa fotoğrafçılığı", "Rahatlatıcı gezi"]
     }
 ]
